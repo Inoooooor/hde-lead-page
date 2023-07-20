@@ -46,7 +46,7 @@ code {
 body {
   -webkit-tap-highlight-color: transparent;
 }
-@font-face {
+/* @font-face {
   font-family: hdes;
   src: url("/fonts/hdes.eot?xufyp1");
   src: url("/fonts/hdes.eot?xufyp1#iefix") format("embedded-opentype"),
@@ -56,7 +56,7 @@ body {
   font-weight: 400;
   font-style: normal;
   font-display: block;
-}
+} */
 [class*=" hdes-"],
 [class^="hdes-"] {
   font-family: hdes !important;
@@ -9565,21 +9565,21 @@ html {
   padding: 0;
   margin: 0;
 }
-.header-logo-cloud {
+/* .header-logo-cloud {
   width: 60px;
   height: 40px;
   font-size: 30px;
   background: url("/images/hde-logo-cloud.svg") 0 0 / contain no-repeat;
   float: left;
-}
-.header-logo-text {
+} */
+/* .header-logo-text {
   width: 130px;
   margin-top: 18px;
   height: 22px;
   font-size: 30px;
   background: url("/images/hde-logo-text.svg") 0 0 / contain no-repeat;
   float: right;
-}
+} */
 #header-wrapper #header.start .logo {
   background: url("/images/hde-logo.svg") 0 0 / cover no-repeat;
 }
