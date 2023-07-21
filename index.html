@@ -6,15 +6,139 @@
   <link rel="icon" type="image/svg+xml" href="https://helpdeskeddy.ru/favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Лид-магнит</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-  <div class="container">
-    <section name="lead-form" class="min-vh-100 vw-75 bg-primary"></section>
-    <section name="lead-description"></section>
+  <div class="container-lg">
+    <section name="lead-form" class="vh-75 vw-75 bg-primary">
+      <div class="row mb-5">
+        <div class="col bg-success fs-1 py-5">
+          RESULTING
+        </div>
+      </div>
+      <div class="row gy-4">
+        <div class="col-md-6 col-sm-12" style="background-color: gray;">
+          <p class="fs-1">Закрытая экскурсия </p>
+          <p class="fs-1">в отдел продаж Resulting</p>
+          <p class="fs-5">Покажем: нашу воронку продаж, CRM, скрипты, регламенты, систему обучения, контроля, мотивации
+            и управления
+            продавцами.
+          </p>
+          <form>
+            <div class="form-floating mb-2">
+              <input required type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="input-group mb-2">
+              <input required id="phone" type="tel" name="phone" class="form-control py-3" />
+            </div>
+            <div class="form-floating mb-2">
+              <select required id="floatingSelect" aria-label="Floating label select example" class="form-select">
+                <option value="">Указать</option>
+                <option value="owner">Владелец</option>
+                <option value="salesDepartmentHead">Руководитель отдела продаж</option>
+                <option value="other">Другая должность</option>
+              </select>
+              <label for="floatingSelect">Ваша должность</label>
+            </div>
+            <div class="form-floating mb-2">
+              <select required id="floatingSelect" aria-label="Floating label select example" class="form-select">
+                <option value="">Указать</option>
+                <option value="lessThanOneMillionRub">До 1 млн</option>
+                <option value="betweenOneAndFiveMillionRub">от 1 до 5 млн</option>
+                <option value="moreThan5MillionRub">от 5 млн</option>
+              </select>
+              <label for="floatingSelect">Оборот в месяц</label>
+            </div>
+            <div class="form-check mb-2">
+              <input required class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Я согласен(а) с <a href="">политикой обработки персональных данных</a>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-warning w-100 mb-2 py-2">Запишите меня на удобное время</button>
+          </form>
+
+        </div>
+        <div class="col" style="background-color: black; width: 450px; height: 500px;">
+          <div class="row justify-content-center align-items-center h-100">
+            <div class="col-2 d-flex justify-content-center">
+              <a class="">
+                <img src="https://static.tildacdn.com/tild3363-3364-4830-b134-396565306361/__.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <!-- <button class="btn btn-primary" type="button" title="Play Video">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-play"
+              viewBox="0 0 16 16">
+              <path
+                d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z" />
+            </svg>
+          </button> -->
+        </div>
+      </div>
+
+    </section>
+    <section name="lead-description" class="vh-100 bg-primary-subtle">
+      <div class="row">
+        <p class="fs-1 bg-info-subtle col py-5 mb-2">Длительность 60 минут</p>
+      </div>
+      <div class="row gx-3 d-flex justify-content-evenly mb-5">
+        <div class="col-5 bg-warning-subtle" style="height: 200px;"></div>
+        <div class="col-5 bg-warning-subtle" style="height: 200px;"></div>
+      </div>
+      <div class="row">
+        <p class="fs-1 bg-dark-subtle mb-5">Бонусы после регистрации</p>
+      </div>
+      <div class="row d-flex justify-content-evenly">
+        <div class="card" style="width: 200px;">
+          <img src="https://devtest.helpdeskeddy.com/ru/file/download/c16f87f1945e15120d34285249e049c84c1c2682"
+            class="card-img-top p-2" alt="шляпа">
+          <div class="card-body">
+            <p class="card-title ">Чек-лист для проверки РОПа на компетентность</p>
+          </div>
+        </div>
+        <div class="card" style="width: 200px;">
+          <img src="https://devtest.helpdeskeddy.com/ru/file/download/c16f87f1945e15120d34285249e049c84c1c2682"
+            class="card-img-top p-2" alt="шляпа">
+          <div class="card-body">
+            <p class="card-title ">Чек-лист для проверки РОПа на компетентность</p>
+          </div>
+        </div>
+        <div class="card" style="width: 200px;">
+          <img src="https://devtest.helpdeskeddy.com/ru/file/download/c16f87f1945e15120d34285249e049c84c1c2682"
+            class="card-img-top p-2" alt="шляпа">
+          <div class="card-body">
+            <p class="card-title ">Чек-лист для проверки РОПа на компетентность</p>
+          </div>
+        </div>
+        <div class="card" style="width: 200px;">
+          <img src="https://devtest.helpdeskeddy.com/ru/file/download/c16f87f1945e15120d34285249e049c84c1c2682"
+            class="card-img-top p-2" alt="шляпа">
+          <div class="card-body">
+            <p class="card-title ">Чек-лист для проверки РОПа на компетентность</p>
+          </div>
+        </div>
+        <div class="card" style="width: 200px;">
+          <img src="https://devtest.helpdeskeddy.com/ru/file/download/c16f87f1945e15120d34285249e049c84c1c2682"
+            class="card-img-top p-2" alt="шляпа">
+          <div class="card-body">
+            <p class="card-title ">Чек-лист для проверки РОПа на компетентность</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 
   <script type="module" src="/main.js"></script>
+
 </body>
 
 </html>
