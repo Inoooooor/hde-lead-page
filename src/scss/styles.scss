@@ -29,3 +29,14 @@
     background: linear-gradient(153deg, #2c9b75 0, #23879a 100%);
   }
 }
+
+body {
+  background-image: url("https://helpdeskeddy.ru/images/lines/block-start-right-bg.svg"),
+    url("https://helpdeskeddy.ru/images/lines/block-start-left-bg.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right, left;
+}
+
+.hdes-solution:before {
+  content: "\e915";
+}
