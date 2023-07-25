@@ -13,18 +13,20 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="./src/scss/styles.scss">
+
 </head>
 
 <body>
   <div class="container-lg">
-    <section name="lead-form" class="vh-75 vw-75 bg-primary">
+    <section name="lead-form" class="vh-75 vw-75">
       <div class="row mb-5">
-        <div class="col bg-success fs-1 py-5">
-          RESULTING
+        <div class="col bg-primary fs-1 py-5">
+          HelpDEskEddy (удалить перед продом)
         </div>
       </div>
       <div class="row gy-4">
-        <div class="col-md-6 col-sm-12" style="background-color: gray;">
+        <div class="col-md-6 col-sm-12">
           <p class="fs-1">Закрытая экскурсия </p>
           <p class="fs-1">в отдел продаж Resulting</p>
           <p class="fs-5">Покажем: нашу воронку продаж, CRM, скрипты, регламенты, систему обучения, контроля, мотивации
@@ -32,30 +34,34 @@
             продавцами.
           </p>
           <form>
-            <div class="form-floating mb-2">
-              <input required type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-              <label for="floatingInput">Email address</label>
+            <div class=" mb-2 ">
+              <input required type="email" class="form-control rounded-pill p-3 border border-primary"
+                id="floatingInput" placeholder="name@example.com">
+              <!-- <label for="floatingInput">Email address</label> -->
             </div>
             <div class="input-group mb-2">
-              <input required id="phone" type="tel" name="phone" class="form-control py-3" />
+              <input required id="phone" type="tel" name="phone"
+                class="border border-primary form-control rounded-pill py-3" />
             </div>
-            <div class="form-floating mb-2">
-              <select required id="floatingSelect" aria-label="Floating label select example" class="form-select">
-                <option value="">Указать</option>
+            <div class=" mb-2">
+              <select required id="floatingSelect" aria-label="Floating label select example "
+                class="form-select rounded-pill p-3 border border-primary">
+                <option value="">Ваша должность</option>
                 <option value="owner">Владелец</option>
                 <option value="salesDepartmentHead">Руководитель отдела продаж</option>
                 <option value="other">Другая должность</option>
               </select>
-              <label for="floatingSelect">Ваша должность</label>
+              <!-- <label for="floatingSelect">Ваша должность</label> -->
             </div>
-            <div class="form-floating mb-2">
-              <select required id="floatingSelect" aria-label="Floating label select example" class="form-select">
-                <option value="">Указать</option>
+            <div class=" mb-2">
+              <select required id="floatingSelect" aria-label="Floating label select example"
+                class="form-select rounded-pill p-3 border border-primary">
+                <option value="">Оборот в месяц</option>
                 <option value="lessThanOneMillionRub">До 1 млн</option>
                 <option value="betweenOneAndFiveMillionRub">от 1 до 5 млн</option>
                 <option value="moreThan5MillionRub">от 5 млн</option>
               </select>
-              <label for="floatingSelect">Оборот в месяц</label>
+              <!-- <label for="floatingSelect">Оборот в месяц</label> -->
             </div>
             <div class="form-check mb-2">
               <input required class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -63,7 +69,10 @@
                 Я согласен(а) с <a href="">политикой обработки персональных данных</a>
               </label>
             </div>
-            <button type="submit" class="btn btn-warning w-100 mb-2 py-2">Запишите меня на удобное время</button>
+            <button type="submit"
+              class="w-100 mb-2 py-2 rounded-pill text-white fs-3 border border-0 submit-btn">Запишите меня на
+              удобное
+              время</button>
           </form>
 
         </div>
