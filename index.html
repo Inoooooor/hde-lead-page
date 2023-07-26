@@ -34,7 +34,7 @@
           и управления
           продавцами.
         </h5>
-        <form method="post" action="https://webhook.site/374df3b3-2d83-4f0d-93b4-182195a5c4dc">
+        <form id="leadForm" method="post" action="https://webhook.site/374df3b3-2d83-4f0d-93b4-182195a5c4dc">
           <div class=" mb-2 ">
             <input name="email" required type="email" class="form-control rounded-pill p-3 border border-primary"
               id="floatingInput" placeholder="name@example.com">
@@ -75,6 +75,10 @@
             удобное
             время</button>
         </form>
+        <div class="alert alert-error bg-danger bg-opacity-50 text-white fs-5 rounded-1" style="display: none;">Неверный
+          формат телефона
+        </div>
+
       </div>
       <div class="col col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/cKOvrahL3ps" title="YouTube video player"
