@@ -1,168 +1,265 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://helpdeskeddy.ru/favicon.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лид-магнит</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/scss/styles.scss" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="https://helpdeskeddy.ru/favicon.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Лид-магнит</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./src/scss/styles.scss">
-
-</head>
-
-<body>
-  <!-- <div class="container-lg"> -->
-  <section name="lead-form" class="vh-75 vw-75 mb-5 container-lg">
-    <div class="row mb-5">
-      <div class="col fs-1 py-5">
-        HelpDEskEddy (удалить перед продом)
+  <body>
+    <section name="lead-form" class="vh-75 vw-75 mb-5 container-lg">
+      <div class="row mb-5">
+        <div class="col fs-1 py-5">HelpDEskEddy (удалить перед продом)</div>
       </div>
-    </div>
-    <div class="row gy-4">
-      <div class="col-md-6 col-sm-12">
-        <h2 class="fs-1">Закрытая экскурсия </h2>
-        <h2 class="fs-1">в отдел продаж Resulting</h2>
-        <h5 class="my-4">Покажем: нашу воронку продаж, CRM, скрипты, регламенты, систему обучения, контроля,
-          мотивации
-          и управления
-          продавцами.
-        </h5>
-        <form id="leadForm" method="post" action="https://webhook.site/374df3b3-2d83-4f0d-93b4-182195a5c4dc">
-          <div class=" mb-2 ">
-            <input name="email" required type="email" class="form-control rounded-pill p-3 border border-primary"
-              id="floatingInput" placeholder="name@example.com">
-            <!-- <label for="floatingInput">Email address</label> -->
-          </div>
-          <div class="input-group mb-2">
-            <input name="phone" required id="phone" type="tel" name="phone"
-              class="border border-primary form-control rounded-pill py-3" />
-          </div>
-          <div class=" mb-2">
-            <select name="job-position" required id="floatingSelect" aria-label="Floating label select example "
-              class="form-select rounded-pill p-3 border border-primary">
-              <option value="">Ваша должность</option>
-              <option value="owner">Владелец</option>
-              <option value="salesDepartmentHead">Руководитель отдела продаж</option>
-              <option value="other">Другая должность</option>
-            </select>
-            <!-- <label for="floatingSelect">Ваша должность</label> -->
-          </div>
-          <div class=" mb-2">
-            <select name="money-month-turnover" required id="floatingSelect" aria-label="Floating label select example"
-              class="form-select rounded-pill p-3 border border-primary">
-              <option value="">Оборот в месяц</option>
-              <option value="lessThanOneMillionRub">До 1 млн</option>
-              <option value="betweenOneAndFiveMillionRub">От 1 до 5 млн</option>
-              <option value="moreThan5MillionRub">От 5 млн</option>
-            </select>
-            <!-- <label for="floatingSelect">Оборот в месяц</label> -->
-          </div>
-          <div class="form-check mb-2">
-            <input name="PDA" required class="form-check-input" type="checkbox" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Я согласен(а) с <a href="">политикой обработки персональных данных</a>
-            </label>
-          </div>
-          <button type="submit"
-            class="w-100 mb-2 py-2 rounded-pill text-white fs-md-5 fs-sm-3 fs-4 border border-0 submit-btn">Запишите
-            меня на
-            удобное
-            время</button>
-        </form>
-        <div class="alert alert-error bg-danger bg-opacity-50 text-white fs-5 rounded-1" style="display: none;">Неверный
-          формат телефона
-        </div>
-
-      </div>
-      <div class="col col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/cKOvrahL3ps" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
-        <!-- <div class="row justify-content-center align-items-center h-100">
-            <div class="col-2 d-flex justify-content-center">
-              <a class="" href="">
-                <img src="https://static.tildacdn.com/tild3363-3364-4830-b134-396565306361/__.svg" alt="">
-              </a>
+      <div class="row gy-4">
+        <div class="col-md-6 col-sm-12">
+          <h2 class="fs-1">Закрытая экскурсия</h2>
+          <h2 class="fs-1">в отдел продаж Resulting</h2>
+          <h5 class="my-4">
+            Покажем: нашу воронку продаж, CRM, скрипты, регламенты, систему
+            обучения, контроля, мотивации и управления продавцами.
+          </h5>
+          <form
+            id="leadForm"
+            method="post"
+            action="https://webhook.site/374df3b3-2d83-4f0d-93b4-182195a5c4dc"
+          >
+            <div class="mb-2">
+              <input
+                name="email"
+                required
+                type="email"
+                class="form-control rounded-pill p-3 border border-primary"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
             </div>
-          </div> -->
-      </div>
-    </div>
-
-  </section>
-  <div class="bg-primary bg-opacity-5 min-vh-100">
-    <section name="lead-description" class="min-vh-100 container-lg">
-      <div class="row">
-        <p class="fs-1 fw-bold col my-5">Длительность 60 минут</p>
-      </div>
-      <div class="row gx-3 d-flex justify-content-evenly">
-        <div class="col-5 rounded-5 d-flex align-items-center shadow bg-light p-2">
-          <img src="https://helpdeskeddy.ru/images/banner/hde-banner-circle.svg" alt="hde" class="col-4 ">
-          <div class="col-8 text-center fs-3 overflow-hidden">
-            <p>Экскурсия</p>
-            <p>бесплатная</p>
+            <div class="input-group mb-2">
+              <input
+                name="phone"
+                required
+                id="phone"
+                type="tel"
+                name="phone"
+                class="border border-primary form-control rounded-pill py-3"
+              />
+            </div>
+            <div class="mb-2">
+              <select
+                name="job-position"
+                required
+                id="floatingSelect"
+                aria-label="Floating label select example "
+                class="form-select rounded-pill p-3 border border-primary"
+              >
+                <option value="">Ваша должность</option>
+                <option value="owner">Владелец</option>
+                <option value="salesDepartmentHead">
+                  Руководитель отдела продаж
+                </option>
+                <option value="other">Другая должность</option>
+              </select>
+            </div>
+            <div class="mb-2">
+              <select
+                name="money-month-turnover"
+                required
+                id="floatingSelect"
+                aria-label="Floating label select example"
+                class="form-select rounded-pill p-3 border border-primary"
+              >
+                <option value="">Оборот в месяц</option>
+                <option value="lessThanOneMillionRub">До 1 млн</option>
+                <option value="betweenOneAndFiveMillionRub">
+                  От 1 до 5 млн
+                </option>
+                <option value="moreThan5MillionRub">От 5 млн</option>
+              </select>
+            </div>
+            <div class="form-check mb-2">
+              <input
+                name="PDA"
+                required
+                class="form-check-input"
+                type="checkbox"
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Я согласен(а) с
+                <a href="">политикой обработки персональных данных</a>
+              </label>
+            </div>
+            <button
+              type="submit"
+              class="w-100 mb-2 py-2 rounded-pill text-white fs-md-5 fs-sm-4 fs-4 border border-0 submit-btn"
+            >
+              Запишите меня на удобное время
+            </button>
+          </form>
+          <div
+            class="alert alert-error bg-danger bg-opacity-50 text-white fs-5 rounded-1"
+            style="display: none"
+          >
+            Неверный формат телефона
           </div>
         </div>
-        <div class="col-5 rounded-5 d-flex align-items-center shadow bg-light p-2">
-          <img src="https://helpdeskeddy.ru/images/banner/hde-banner-circle.svg" alt="hde" class="col-4 ">
-          <div class="col-8 text-center fs-3 overflow-hidden">
-            <p>Место проведения</p>
-            <p>Zoom-online</p>
-          </div>
-        </div>
-        <!-- <div class="col-5 bg-warning-subtle rounded-5">
-          <img src="https://helpdeskeddy.ru/images/banner/hde-banner-circle.svg" alt="hde">
-        </div> -->
-      </div>
-      <div class="row">
-        <p class="fs-1 fw-bold my-5">Бонусы после регистрации</p>
-      </div>
-      <div class="row d-flex justify-content-evenly">
-        <div class="card col-xl-2 col-lg-3 mx-2 my-1 col-sm-4 rounded-5 shadow">
-          <img src="https://helpdeskeddy.ru/images/banner/hde-banner-circle.svg" class="card-img-top p-2" alt="шляпа">
-          <div class="card-body">
-            <p class="card-title ">Чек-лист для проверки РОПа на компетентность</p>
-          </div>
-        </div>
-        <div class="card col-xl-2 col-lg-3 mx-2 my-1 col-sm-4 rounded-5 shadow">
-          <img src="https://helpdeskeddy.ru/images/banner/hde-banner-circle.svg" class="card-img-top p-2" alt="шляпа">
-          <div class="card-body">
-            <p class="card-title ">Найм бизнес-ассистента</p>
-          </div>
-        </div>
-        <div class="card col-xl-2 col-lg-3 mx-2 my-1 col-sm-4 rounded-5 shadow">
-          <img src="https://helpdeskeddy.ru/images/banner/hde-banner-circle.svg" class="card-img-top p-2" alt="шляпа">
-          <div class="card-body">
-            <p class="card-title ">Список с обязанностями РОПа</p>
-          </div>
-        </div>
-        <div class="card col-xl-2 col-lg-3 mx-2 my-1 col-sm-4 rounded-5 shadow">
-          <img src="https://helpdeskeddy.ru/images/banner/hde-banner-circle.svg" class="card-img-top p-2" alt="шляпа">
-          <div class="card-body">
-            <p class="card-title ">Чек-лист 7 смертных грехов владельца</p>
-          </div>
-        </div>
-        <div class="card col-xl-2 col-lg-3 mx-2 my-1 col-sm-4 rounded-5 shadow">
-          <img src="https://helpdeskeddy.ru/images/banner/hde-banner-circle.svg" class="card-img-top p-2" alt="шляпа">
-          <div class="card-body">
-            <p class="card-title ">Книга: «Секреты больших продаж»</p>
-          </div>
+        <div
+          class="col col-md-6 col-sm-12 d-flex justify-content-center align-items-center"
+        >
+          <video
+            id="my-video"
+            class="video-js"
+            controls
+            preload="auto"
+            width="640"
+            height="264"
+            poster="https://helpdeskeddy.ru/video/start/start.webp"
+            data-setup='{"aspectRatio": "16:9"}'
+          >
+            <source
+              src="https://helpdeskeddy.ru/video/start/start.mp4"
+              type="video/mp4"
+            />
+            <source
+              src="https://helpdeskeddy.ru/video/start/start.webm"
+              type="video/webm"
+            />
+            <source
+              src="https://helpdeskeddy.ru/video/start/start.ogv"
+              type="video/ogg"
+            />
+            <p class="vjs-no-js">
+              To view this video please enable JavaScript, and consider
+              upgrading to a web browser that
+              <a href="https://videojs.com/html5-video-support/" target="_blank"
+                >supports HTML5 video</a
+              >
+            </p>
+          </video>
         </div>
       </div>
     </section>
-  </div>
-  </div>
-
-  <script type="module" src="/main.js"></script>
-
-</body>
-
+    <div class="bg-primary bg-opacity-5 min-vh-100">
+      <section name="lead-description" class="min-vh-100 container-lg">
+        <div class="row">
+          <p class="fs-1 fw-bold col my-5">Длительность 60 минут</p>
+        </div>
+        <div class="row gx-3 d-flex justify-content-evenly">
+          <div
+            class="col-5 rounded-5 d-flex align-items-center shadow bg-light p-2"
+          >
+            <img
+              src="https://helpdeskeddy.ru/images/banner/hde-banner-circle.svg"
+              alt="hde"
+              class="col-4"
+            />
+            <div class="col-8 text-center fs-3 overflow-hidden">
+              <p>Экскурсия</p>
+              <p>бесплатная</p>
+            </div>
+          </div>
+          <div
+            class="col-5 rounded-5 d-flex align-items-center shadow bg-light p-2"
+          >
+            <img
+              src="https://helpdeskeddy.ru/images/banner/hde-banner-circle.svg"
+              alt="hde"
+              class="col-4"
+            />
+            <div class="col-8 text-center fs-3 overflow-hidden">
+              <p>Место проведения</p>
+              <p>Zoom-online</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <p class="fs-1 fw-bold my-5">Бонусы после регистрации</p>
+        </div>
+        <div class="row d-flex justify-content-evenly">
+          <div
+            class="card col-xl-2 col-lg-3 mx-2 my-1 col-sm-4 rounded-5 shadow"
+          >
+            <img
+              src="https://helpdeskeddy.ru/images/banner/hde-banner-circle.svg"
+              class="card-img-top p-2"
+              alt="шляпа"
+            />
+            <div class="card-body">
+              <p class="card-title">
+                Чек-лист для проверки РОПа на компетентность
+              </p>
+            </div>
+          </div>
+          <div
+            class="card col-xl-2 col-lg-3 mx-2 my-1 col-sm-4 rounded-5 shadow"
+          >
+            <img
+              src="https://helpdeskeddy.ru/images/banner/hde-banner-circle.svg"
+              class="card-img-top p-2"
+              alt="шляпа"
+            />
+            <div class="card-body">
+              <p class="card-title">Найм бизнес-ассистента</p>
+            </div>
+          </div>
+          <div
+            class="card col-xl-2 col-lg-3 mx-2 my-1 col-sm-4 rounded-5 shadow"
+          >
+            <img
+              src="https://helpdeskeddy.ru/images/banner/hde-banner-circle.svg"
+              class="card-img-top p-2"
+              alt="шляпа"
+            />
+            <div class="card-body">
+              <p class="card-title">Список с обязанностями РОПа</p>
+            </div>
+          </div>
+          <div
+            class="card col-xl-2 col-lg-3 mx-2 my-1 col-sm-4 rounded-5 shadow"
+          >
+            <img
+              src="https://helpdeskeddy.ru/images/banner/hde-banner-circle.svg"
+              class="card-img-top p-2"
+              alt="шляпа"
+            />
+            <div class="card-body">
+              <p class="card-title">Чек-лист 7 смертных грехов владельца</p>
+            </div>
+          </div>
+          <div
+            class="card col-xl-2 col-lg-3 mx-2 my-1 col-sm-4 rounded-5 shadow"
+          >
+            <img
+              src="https://helpdeskeddy.ru/images/banner/hde-banner-circle.svg"
+              class="card-img-top p-2"
+              alt="шляпа"
+            />
+            <div class="card-body">
+              <p class="card-title">Книга: «Секреты больших продаж»</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="https://vjs.zencdn.net/8.3.0/video.min.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>

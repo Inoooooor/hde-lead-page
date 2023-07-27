@@ -1,18 +1,5 @@
 @import "bootstrap/scss/bootstrap";
 
-$utilities: map-merge(
-  $utilities,
-  (
-    "font-size":
-      map-merge(
-        map-get($utilities, "font-size"),
-        (
-          responsive: true,
-        )
-      ),
-  )
-);
-
 .iti {
   width: 100%;
 
@@ -20,27 +7,20 @@ $utilities: map-merge(
     z-index: 10;
   }
 }
-// body {
-//   background-color: aqua;
-// }
-.vjs-big-play-button {
+
+.submit-btn {
+  background: linear-gradient(266deg, #2c9b75 0, #23879a 100%);
+
+  &:hover {
+    background: linear-gradient(153deg, #2c9b75 0, #23879a 100%);
+  }
+}
+
+.video-js .vjs-big-play-button {
   width: 60px;
   height: 60px;
   border-radius: 90%;
   line-height: 57px;
-
-  .vjs-icon-placeholder:before {
-    content: "\f101";
-    font-family: VideoJS;
-    font-weight: 400;
-    font-style: normal;
-  }
-}
-.submit-btn {
-  background: linear-gradient(266deg, #2c9b75 0, #23879a 100%);
-  &:hover {
-    background: linear-gradient(153deg, #2c9b75 0, #23879a 100%);
-  }
 }
 
 body {
@@ -48,8 +28,4 @@ body {
     url("https://helpdeskeddy.ru/images/lines/block-start-left-bg.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: right, left;
-}
-
-.hdes-solution:before {
-  content: "\e915";
 }
