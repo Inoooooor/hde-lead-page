@@ -1,5 +1,18 @@
 @import "bootstrap/scss/bootstrap";
 
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-size":
+      map-merge(
+        map-get($utilities, "font-size"),
+        (
+          responsive: true,
+        )
+      ),
+  )
+);
+
 .iti {
   width: 100%;
 
