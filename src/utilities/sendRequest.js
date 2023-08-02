@@ -6,7 +6,7 @@ export default async function () {
     const jobPosition = document.querySelector("#jobPosition").value
     const tickets = document.querySelector("#tickets").value
     const region = document.querySelector(".iti__selected-flag").title
-    const chatIdAddress = "-845092506"
+    const chatIdAddress = "-1001962937315"
 
     const options = {
       method: "POST",
