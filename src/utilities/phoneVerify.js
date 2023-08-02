@@ -19,9 +19,12 @@ export default function () {
 
     if (phoneInput.isValidNumber()) {
       // this.submit()
+      alert("bruh")
+      return true
     } else {
       error.style.display = ""
       error.innerHTML = `Неверный формат телефона.`
+      return false
     }
   }
 

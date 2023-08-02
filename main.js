@@ -39,6 +39,4 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   phoneVerify()
-
-  console.log(form)
 })
