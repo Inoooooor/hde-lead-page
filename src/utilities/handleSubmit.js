@@ -1,3 +1,4 @@
+import sendRequest from "./sendRequest"
 export default function () {
   const phoneInputField = document.querySelector("#phone")
 
@@ -9,6 +10,7 @@ export default function () {
   })
 
   const error = document.querySelector(".alert-error")
+  const info = document.querySelector(".alert-info")
 
   function process(event) {
     event.preventDefault()
@@ -18,13 +20,13 @@ export default function () {
     error.style.display = "none"
 
     if (phoneInput.isValidNumber()) {
-      // this.submit()
-      alert("bruh")
-      return true
+      sendRequest()
+      this.reset()
+      info.style.display = ""
+      info.innerHTML = "Благодарим вас! Мы скоро с вами свяжемся."
     } else {
       error.style.display = ""
       error.innerHTML = `Неверный формат телефона.`
-      return false
     }
   }
 
