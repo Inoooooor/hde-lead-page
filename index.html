@@ -25,106 +25,103 @@
   </head>
 
   <body>
-    <section name="lead-form" class="vh-75 vw-75 mb-5 container-lg col-11">
-      <div class="row mb-5">
+    <section name="lead-form" class="vh-75 vw-75 mb-4 container-lg col-11">
+      <div class="row mb-4">
         <div class="col fs-1 py-4">HelpDEskEddy (удалить перед продом)</div>
       </div>
-      <div class="row gy-4">
-        <div class="col-md-6 col-sm-12">
-          <h2 class="fs-1">
-            Закрытая экскурсия в отдел поддержки HelpDeskEddy
-          </h2>
-          <h5 class="my-4">
-            На нашей системе работают службы поддержки Детского мира,
-            Сбермаркета, Ламоды. Мы построили у себя эталонный отдел поддержки и
-            показываем всё:
-          </h5>
-          <form id="leadForm">
-            <div class="mb-2">
-              <input
-                name="email"
-                required
-                type="email"
-                class="form-control rounded-pill p-3 border border-primary"
-                id="email"
-                placeholder="Рабочая эл.почта"
-              />
-            </div>
-            <div class="input-group mb-2">
-              <input
-                name="phone"
-                required
-                id="phone"
-                type="tel"
-                name="phone"
-                class="border border-primary form-control rounded-pill py-3"
-              />
-            </div>
-            <div class="mb-2">
-              <select
-                name="job-position"
-                required
-                id="jobPosition"
-                aria-label="Floating label select example "
-                class="form-select rounded-pill p-3 border border-primary"
-              >
-                <option value="">Ваша должность</option>
-                <option value="Владелец">Владелец</option>
-                <option value="Руководитель отдела продаж">
-                  Руководитель отдела продаж
-                </option>
-                <option value="Другая должность">Другая должность</option>
-              </select>
-            </div>
-            <div class="mb-2">
-              <select
-                name="tickets"
-                required
-                id="tickets"
-                aria-label="Floating label select example"
-                class="form-select rounded-pill p-3 border border-primary"
-              >
-                <option value="">Тикетов в месяц</option>
-                <option value="До 1 млн">До 1 млн</option>
-                <option value="От 1 до 5 млн">От 1 до 5 млн</option>
-                <option value="От 5 млн">От 5 млн</option>
-              </select>
-            </div>
-            <div class="form-check mb-2">
-              <input
-                name="PDA"
-                required
-                class="form-check-input"
-                type="checkbox"
-                id="flexCheckDefault"
-              />
-              <label class="form-check-label" for="flexCheckDefault">
-                Я согласен(а) с
-                <a
-                  href="https://helpdeskeddy.ru/private_policy.pdf"
-                  target="_blank"
-                  >политикой обработки персональных данных</a
-                >
-              </label>
-            </div>
-            <button
-              type="submit"
-              class="w-100 mb-2 py-2 rounded-pill text-white fs-md-5 fs-sm-4 fs-4 border border-0 submit-btn"
+      <!-- <div class="row gy-4"> -->
+      <div class="col-md-6 col-sm-12 d-flex flex-row row">
+        <h2 class="fs-2 order-0">
+          Закрытая экскурсия в отдел поддержки HelpDeskEddy
+        </h2>
+        <p class="mb-4 order-1 col-12 fw-semibold fs-7">
+          На нашей системе работают службы поддержки Детского мира, Сбермаркета,
+          Ламоды. Мы построили у себя эталонный отдел поддержки и показываем
+          всё:
+        </p>
+        <form class="order-2" id="leadForm">
+          <div class="mb-2">
+            <input
+              name="email"
+              required
+              type="email"
+              class="form-control rounded-pill py-2 border border-primary fs-7"
+              id="email"
+              placeholder="Рабочая эл.почта"
+            />
+          </div>
+          <div class="input-group mb-2">
+            <input
+              name="phone"
+              required
+              id="phone"
+              type="tel"
+              name="phone"
+              class="border border-primary fs-7 form-control rounded-pill py-2"
+            />
+          </div>
+          <div class="mb-2">
+            <select
+              name="job-position"
+              required
+              id="jobPosition"
+              aria-label="Floating label select example "
+              class="form-select rounded-pill py-2 border border-primary fs-7"
             >
-              Запишите меня на удобное время
-            </button>
-          </form>
+              <option value="">Ваша должность</option>
+              <option value="Владелец">Владелец</option>
+              <option value="Руководитель отдела продаж">
+                Руководитель отдела продаж
+              </option>
+              <option value="Другая должность">Другая должность</option>
+            </select>
+          </div>
+          <div class="mb-2">
+            <select
+              name="tickets"
+              required
+              id="tickets"
+              aria-label="Floating label select example"
+              class="form-select rounded-pill py-2 border border-primary fs-7"
+            >
+              <option value="">Тикетов в месяц</option>
+              <option value="До 1 млн">До 1 млн</option>
+              <option value="От 1 до 5 млн">От 1 до 5 млн</option>
+              <option value="От 5 млн">От 5 млн</option>
+            </select>
+          </div>
+          <div class="form-check mb-2 fs-7">
+            <input
+              name="PDA"
+              required
+              class="form-check-input"
+              type="checkbox"
+              id="flexCheckDefault"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              Я согласен(а) с
+              <a
+                href="https://helpdeskeddy.ru/private_policy.pdf"
+                target="_blank"
+                >политикой обработки персональных данных</a
+              >
+            </label>
+          </div>
+          <button
+            type="submit"
+            class="w-100 py-2 rounded-pill text-white border border-0 submit-btn fs-7"
+          >
+            Запишите меня на удобное время
+          </button>
           <div
-            class="alert alert-error bg-danger bg-opacity-50 text-white fs-5 rounded-1"
+            class="alert alert-error bg-danger bg-opacity-50 text-white fs-7 rounded-1"
             style="display: none"
           >
             Неверный формат телефона
           </div>
-          <div class="alert alert-info" style="display: none"></div>
-        </div>
-        <div
-          class="col col-md-6 col-sm-12 d-flex justify-content-center align-items-center"
-        >
+          <div class="alert alert-info fs-7" style="display: none"></div>
+        </form>
+        <div class="col-12 col-md-6 col-sm-12 order-1 mb-4">
           <video
             id="my-video"
             class="video-js"
@@ -159,13 +156,13 @@
       </div>
     </section>
     <div class="bg-primary bg-opacity-5 min-vh-100">
-      <section name="lead-description" class="min-vh-100 container-lg">
+      <section name="lead-description" class="min-vh-100 container-lg col-11">
         <div class="row">
-          <p class="fs-1 fw-bold col my-5">Длительность 60 минут</p>
+          <h2 class="fs-2 fw-bold col my-5">Длительность 60 минут</h2>
         </div>
-        <div class="row gx-3 d-flex justify-content-evenly">
+        <div class="row gx-3 flex-column justify-content-evenly">
           <div
-            class="col-sm-5 col-10 mb-2 rounded-5 d-flex align-items-center shadow bg-light p-2"
+            class="col-sm-5 col-12 mb-2 rounded-5 flex-column align-items-center shadow bg-light p-2"
           >
             <img
               src="https://helpdeskeddy.ru/images/banner/hde-banner-circle.svg"
@@ -179,7 +176,7 @@
             </div>
           </div>
           <div
-            class="col-sm-5 col-10 mb-2 rounded-5 d-flex align-items-center shadow bg-light p-2"
+            class="col-sm-5 col-12 mb-2 rounded-5 flex-column align-items-center shadow bg-light p-2"
           >
             <img
               src="https://helpdeskeddy.ru/images/banner/hde-banner-circle.svg"
