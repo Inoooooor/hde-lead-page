@@ -45,8 +45,8 @@ body {
   @media screen and (min-width: 992px) {
     display: grid !important;
     grid-template-columns: repeat(8, minmax(0, 1fr));
-    grid-template-rows: repeat(8, minmax(0, 1fr));
-    gap: 1rem;
+    grid-template-rows: repeat(6, minmax(0, 1fr));
+    // gap: 1rem;
   }
 
   .header-grid-area {
