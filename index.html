@@ -82,16 +82,17 @@
           </div>
           <div class="mb-2">
             <select
-              name="tickets"
+              name="employeesAmount"
               required
-              id="tickets"
+              id="employeesAmount"
               aria-label="Floating label select example"
               class="form-select rounded-pill py-2 border border-primary fs-7 fs-sm-6 fs-md-5 py-md-3"
             >
-              <option value="">Тикетов в месяц</option>
-              <option value="До 1 млн">До 1 млн</option>
-              <option value="От 1 до 5 млн">От 1 до 5 млн</option>
-              <option value="От 5 млн">От 5 млн</option>
+              <option value="">Количество сотрудников</option>
+              <option value="1-5">1-5</option>
+              <option value="6-40">6-40</option>
+              <option value="40-100">40-100</option>
+              <option value="100+">100+</option>
             </select>
           </div>
           <div class="form-check mb-2 fs-7 fs-sm-6 fs-md-5 py-md-3">
@@ -113,17 +114,20 @@
           </div>
           <button
             type="submit"
-            class="w-100 py-2 rounded-pill text-white border border-0 submit-btn fs-7 fs-sm-6 fs-md-5 py-md-3"
+            class="w-100 py-2 rounded-pill text-white border border-0 submit-btn fs-7 fs-sm-6 fs-md-5 py-md-3 mb-2"
           >
             Запишите меня на удобное время
           </button>
           <div
-            class="alert alert-error bg-danger bg-opacity-50 text-white fs-7 rounded-1"
+            class="alert alert-error bg-danger bg-opacity-50 text-white fs-7 fs-sm-6 fs-md-5 rounded-1"
             style="display: none"
           >
             Неверный формат телефона
           </div>
-          <div class="alert alert-info fs-7" style="display: none"></div>
+          <div
+            class="alert alert-info fs-7 fs-sm-6 fs-md-5"
+            style="display: none"
+          ></div>
         </form>
         <div class="col-12 col-lg-12 order-1 mb-4 video-grid-area">
           <video

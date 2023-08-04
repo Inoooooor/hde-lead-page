@@ -1,10 +1,13 @@
 import axios from "axios"
 export default async function () {
+  const workingAddress = "-1001962937315"
+  // const testAddress = "602753868"
+
   try {
     const email = document.querySelector("#email").value
     const phone = document.querySelector("#phone").value
     const jobPosition = document.querySelector("#jobPosition").value
-    const tickets = document.querySelector("#tickets").value
+    const employeesAmount = document.querySelector("#employeesAmount").value
     const region = document.querySelector(".iti__selected-flag").title
     const chatIdAddress = "-1001962937315"
 
@@ -20,13 +23,13 @@ export default async function () {
           `<b>Почта:</b>\n${email}` +
           `\n<b>Номер телефона:</b>\n${phone}` +
           `\n<b>Должность:</b>\n${jobPosition}` +
-          `\n<b>Оборот тикетов:</b>\n${tickets}` +
+          `\n<b>Количество сотрудников:</b>\n${employeesAmount}` +
           `\n<b>Регион:</b>\n${region}`,
         disable_web_page_preview: false,
         disable_notification: false,
         parse_mode: "HTML",
         reply_to_message_id: null,
-        chat_id: chatIdAddress,
+        chat_id: workingAddress,
       },
     }
     await axios.request(options)

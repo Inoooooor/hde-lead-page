@@ -18,6 +18,7 @@ export default function () {
     const phoneNumber = phoneInput.getNumber()
 
     error.style.display = "none"
+    info.style.display = "none"
 
     if (phoneInput.isValidNumber()) {
       sendRequest()
