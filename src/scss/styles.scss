@@ -6,6 +6,13 @@
   &__country-list {
     z-index: 10;
   }
+
+  &__selected-flag {
+    padding-left: 0.75rem;
+    @media (min-width: 768px) {
+      padding-left: 1.5rem;
+    }
+  }
 }
 
 .submit-btn {
