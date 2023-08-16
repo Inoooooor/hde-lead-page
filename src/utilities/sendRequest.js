@@ -9,7 +9,7 @@ export default async function () {
     const jobPosition = document.querySelector("#jobPosition").value
     const employeesAmount = document.querySelector("#employeesAmount").value
     const region = document.querySelector(".iti__selected-flag").title
-    const chatIdAddress = "-1001962937315"
+    const chatIdAddress = workingAddress
 
     const options = {
       method: "POST",
@@ -29,7 +29,7 @@ export default async function () {
         disable_notification: false,
         parse_mode: "HTML",
         reply_to_message_id: null,
-        chat_id: workingAddress,
+        chat_id: chatIdAddress,
       },
     }
     await axios.request(options)
