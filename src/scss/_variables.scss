@@ -1,8 +1,19 @@
 $hde-green: #23869b;
+$red: #dc3545;
+$cyan: #0dcaf0;
+
+$danger: $red;
 $primary: $hde-green;
+$info: $cyan;
+
 $theme-colors: (
   "primary": $primary,
+  "danger": $danger,
+  "info": $info,
 );
+
+$bs-alert-bg: blue;
+
 $spacer: 1rem;
 $spacers: (
   0: 0,
